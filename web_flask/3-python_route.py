@@ -24,7 +24,7 @@ def listen_c(text):
 @app.route("/python/<text>", strict_slashes=False)
 def listen_c(text="is cool"):
     text = text.replace("_", " ")
-    return f"Python {text}"
+    return "Python {}".format(text)
 
 
 if __name__ == '__main__':
